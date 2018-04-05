@@ -1,4 +1,14 @@
-∀ y ∀ x p(x, y) ⊢ ∃ y ∃ x p(x, y)
+E x E y p(x, y) |- E y E x p(x, y)
 {
-    1. ∀ y ∀ x p(x, y) premise
+  1. E x E y p(x,y)               premise
+  2. {
+       3. a E y p(a,y)            assume
+       4. {
+            5. yo p(a,yo)           assume
+            6. E x p(x,yo)         Ei 5 a
+            7. E y E x p(x,y)     Ei 6 yo
+        }
+        8. E y E x p(x,y)         Ee 3 4
+  }
+  9. E y E x p(x,y)               Ee 1 2
 }

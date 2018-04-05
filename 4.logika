@@ -1,8 +1,7 @@
 ¬∃ x p(x) ⊢ ∀ x ¬p(x)
 {
     1. !E x p(x)    premise
-    2. // get all x !p(x)
-    {
+    2.{
         3. temp
         4.{
             5. p(temp)  assume

@@ -1,0 +1,21 @@
+∀ x ∀ y p(x, y) ⊢ ∀ y ∀ x p(x, y)
+{
+    1. ∀ x ∀ y p(x, y) premise
+    2.{
+        3. y0
+        5. {
+            5. x0
+            6.
+
+             forall Ao p(a, b)  assume
+            6. p(a, b)     alli 5 1
+            7. forall b p(a, b) alli 4 1
+        }
+        8. Axp(a,b)→Ayp(a,b)   ->i 2 4
+        9. Ab(A a p(a,b)→ A b p(a,b))  -> 5 5
+        10. Abp(a,b) alle 1 6
+        11. AaAbp(a,b) Ai 7
+    }
+    12. ∀ y ∀ x p(x, y) alli 2
+
+}

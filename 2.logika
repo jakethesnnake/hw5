@@ -1,0 +1,4 @@
+∀ y ∀ x p(x, y) ⊢ ∃ y ∃ x p(x, y)
+{
+    1. ∀ y ∀ x p(x, y) premise
+}

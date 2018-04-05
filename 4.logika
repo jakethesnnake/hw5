@@ -1,0 +1,15 @@
+¬∃ x p(x) ⊢ ∀ x ¬p(x)
+{
+    1. !E x p(x)    premise
+    2. // get all x !p(x)
+    {
+        3. temp
+        4.{
+            5. p(temp)  assume
+            6. E x p(x)  existsi 5 temp
+            7. _|_  !e 6 1
+        }
+        8. !p(temp) !i 4
+    }
+    9. forall x !p(x)   alli 2
+}

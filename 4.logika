@@ -2,13 +2,13 @@
 {
     1. !E x p(x)    premise
     2.{
-        3. temp
+        3. xo
         4.{
-            5. p(temp)  assume
-            6. E x p(x)  existsi 5 temp
+            5. p(xo)  assume
+            6. E x p(x)  Ei 5 xo
             7. _|_  !e 6 1
         }
-        8. !p(temp) !i 4
+        8. !p(xo) !i 4
     }
-    9. forall x !p(x)   alli 2
+    9. A x !p(x)   Ai 2
 }
